@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <title id = "pageTitle">WhatsDown-Log in</title>
+</head>
+<body style="background-image: url(images/earthTransparent.png); background-repeat: no-repeat; background-position: center; background-size: 80% auto;  background-attachment: fixed;
+">
+    <script src="https://kit.fontawesome.com/765e6b772f.js" crossorigin="anonymous"></script>
+
+                
+    <div class="container-fluid center-container" id = "welcomeContainer">
+        
+        <h1 class="animated-h1">Welcome to WhatsDown. The future of chatting is here...</h1>
+        
+    </div>
+    
+
+    <div class="container hidden" id="signupForm"  style="display: none;">
+
+        <h3 id = "instruction_signup">Create a new account:</h3><br>
+        <div id="serverResponse_signup">
+
+            Successfully Created Account
+        </div>
+        <label><i class="fa-solid fa-user" style="color: #025f3b;"></i> Create a Username: </label>
+        <input type="text" id = "username_signup" placeholder="Minimum 5 Characters" ><br><br>
+        <label><i class="fa-solid fa-lock" style="color: #025f3b;"></i> Create a Password:</label>
+        <input type="password" id = "password_signup" placeholder = "At least 3 characters"><br><br>
+        <label><i class="fa-solid fa-lock" style="color: #025f3b;"></i> Confirm Password: </label>
+        <input type="password" id = "confirm_password" placeholder = "At least 3 characters"><br><br>
+        
+    </div>
+
+    <div class="container" id = "loginForm" >
+        
+        <h3 id = "instruction_login">Log into your account:</h3><br>
+        <div id="serverResponse_login">
+
+            ERROR
+        </div>
+        <label><i class="fa-solid fa-user" style="color: #025f3b;"></i> Username : </label>
+        <input type="text" id = "username_login" ><br><br>
+        <label><i class="fa-solid fa-lock" style="color: #025f3b;"></i> Password :</label>
+        <input type="password" id = "password_login"><br><br>
+        <div id="switchMode">
+            <input type="submit" value = "Log in" id = "btn_login"> or <input id = "btn_signup" type="submit" value = "Sign Up">
+        </div>
+        
+    </div>
+    
+    <p> Version: 0.0.0.11</p>
+    
+    <script src = "index.js">
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title id = "pageTitle">WhatsDown-USERNAME</title>
+    
+</head>
+<body>
+    <script src="https://kit.fontawesome.com/765e6b772f.js" crossorigin="anonymous"></script>
+    <div id="leftSide">
+
+            <div id="menu">
+                <h2 id = "currentUsername"> --Mario </h2>
+                <img src="" id = "pfpMenu" alt = "NULL" width = "30px" height = "auto">
+                <br><br>
+                <input type="submit" value = "Recent" id = "history_mode">
+                <input type="submit" value = "New" id = "search_mode">
+                <input type="submit" value = "Settings" id = "settings">
+                
+                
+            </div>
+            
+            <div id="chatsHistory">
+                <div id="chatsHistoryHeader">
+                    <h3>Recent Activity</h3><br>
+                   
+                    <input type="text" class = "input" id = "chatHistorySearch" placeholder="Find a Conversation"><br><br>
+                </div>
+                
+                <div id = "chatsHistoryList">
+                    
+                        <div style = "display: none;"  id = "originalHistoryListElem" class = "chatHistoryListElem">
+                            <input type="submit" onclick = "hideChat(this)" value = "X">
+                        </div>
+                        <h5 id = "warningChatsHistory">No Conversations Found</h5>
+                </div>
+            </div>
+                <!--settings-->
+            <div id="settingsContent" style="display: none;">
+                <h3>Settings</h3>
+
+                <h4>Account Info</h4><hr>
+
+                <em>Set Profile Picture: </em>
+                <img class="pfp" src="images/pfpDefault.jpg" id = "pfpSelector"><br><br>
+
+                <em>Describe yourself: </em>
+               <input type="text" class = "input" id = "bioContainer" placeholder="Hello There! I am using Whatsdown!"><br><br>
+                <br>
+                <h4>UI Appearance</h4><hr>
+                <div class="theme-switch-wrapper">
+                    <em>Dark Mode:</em>
+                    <label class="theme-switch" for="checkbox">
+                        <input type="checkbox" id="checkbox" />
+                        <div class="slider round"></div>
+                    </label>
+                   
+                </div>
+                <br><br>
+                <em>Chat Wallpaper: </em> <br>
+                <img class="wallpaper" src = "images/dam.jpg" id = "wallpaperSelector">
+                <br>
+                <div class="set">
+                    
+                    <em>Chat Wallpaper Color:</em>
+                    <table class="td">
+                        <tr>
+                            <td id="s1"class=" colored-td" style="background-color:#88B04B;"></td>
+                            <td id="s2" class=" colored-td" style="background-color:#92A8D1;"></td> 
+                            <td id="s3" class=" colored-td" style="background-color: #6B5B95;"></td>
+                            <td id="s4" class="colored-td" style="background-color:#009B77;"></td>
+                        </tr>
+                        <tr>
+                            <td id="s5" class="colored-td" style="background-color:#55B4B0"></td>
+                            <td id="s6" class="colored-td" style="background-color:#DFCFBE"></td> 
+                            <td id="s7" class="colored-td" style="background-color: #98B4D4;"></td>
+                            <td id="s8" class="colored-td" style="background-color:yellow;"></td>
+                        </tr>
+                        <tr>
+                            <td id="s9"class="colored-td" style="background-color: #00A170;"></td>
+                            <td id="s10" class="colored-td" style="background-color:#EFE1CE;"></td> 
+                            <td id="s11" class="colored-td" style="background-color:#9A8B4F;"></td>
+                            <td id="s12" class="colored-td" style="background-color:#282D3C"></td>
+                        </tr>
+                      </table>
+                </div>
+                
+                <br>
+                <h4>Utility</h4>
+                <hr>
+                <input type="submit" class = "btnsss" value = "Reset to Default" id = "resetDefault">
+                <input class="btnss" type="submit" value = "Log out" id = "logout"> <br>
+            </div>
+
+            
+            <div id="usersSearch" style = "display: none;">
+                <div id="usersSearchHeader">
+                    <h3>New Conversation</h3><br>
+                    <input type="text" class = "input" id = "searchUser" placeholder="Search a User"><br><br>
+                </div>
+                
+                <div id = "searchList">
+                    <h5 id = "searchWarningNoResult">No Users Found</h5>
+                    <div style = "display: none" onclick = "saveChat(this)" class = "searchListElem" id = "originalSearchListElem"></div>
+                </div>
+            </div>    
+    </div>
+    <div id="chatSide">
+        <div id="emojiContainer">
+            <h4>Emojis List</h4>
+            <button class = "emoji">&#128512;</button>
+            <button class = "emoji">&#128513;</button>
+            <button class = "emoji">&#128514;</button>
+            <button class = "emoji">&#128515;</button>
+            <button class = "emoji">&#128516;</button>
+            <button class = "emoji">&#128517;</button>
+            <button class = "emoji">&#128518;</button>
+            <button class = "emoji">&#128519;</button>
+            <button class = "emoji">&#128520;</button>
+            <button class = "emoji">&#128521;</button>
+            <button class = "emoji">&#128522;</button>
+            <button class = "emoji">&#128523;</button>
+            <button class = "emoji">&#128525;</button>
+            <button class = "emoji">&#128526;</button>
+            <button class = "emoji">&#128527;</button>
+            <button class = "emoji">&#128528;</button>
+        </div>
+            <div id="chatInfoBar" style="display: none;">
+                <img src="" id = "receiverImage_chatSide">
+            <ul>
+                <li>
+                    <label id = "receiverName_chatSide">EXAMPLE</label>
+                </li>
+                <li>
+                    <em class="bio" id = "receiverBio">BIO</em>
+                </li>
+            </ul>
+               
+            </div>
+
+            <div id="chatContainer" style="display: none;">
+                
+            </div>
+            <div id="messageForm" style="display: none;">
+                
+                
+                <label for="" id = "emojiSelector">
+                    <i class="fa-solid fa-face-smile"></i>
+                </label>
+
+                <i class="fa-solid fa-paperclip" id = "fileSelector_chatSide"></i>
+                <input type="text" id = "messageBar_chatSide" placeholder="Text something to your friend">
+                
+                
+                    <label for="spoilerTag" class="spoiler-label">
+                        <input type="checkbox" id="spoilerTag" class="checkbox">
+                    
+                        <i id = "icon" class="fa-solid fa-eye"></i>
+                      </label>
+                
+                      
+                  
+                  
+                <button  id = "sendMessage_chatSide"class=" bt">
+                    <i class="fas fa-paper-plane"></i>
+                  </button>
+            
+            </div>
+            <div id="chatSuggestion">
+               
+                <h2 class="animated-h1">Try Looking for People to Chat With!</h2>
+            </div>
+    </div>    
+    
+    <script src = "main.js"></script>
+</body>
+</html>

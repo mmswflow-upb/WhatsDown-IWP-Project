@@ -1,0 +1,205 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #075e54;
+  color: #fff;
+  line-height: 1.6;
+}
+body {
+  
+  transition: background-size 1s;
+}
+
+.container-fluid.center-container {
+  transition: margin-bottom 0.5s, margin-top 0.5s;
+}
+
+.container {
+  transition: margin-bottom 0.5s;
+}
+.damn{
+  display: block;
+  animation: fadeIn 10.2s ease;
+}
+.dam{
+  display: none;
+}
+#loginForm {
+  display: none;
+}
+
+.container-fluid{
+  margin-bottom: 70vh;
+  margin-top: 45vh;
+}
+.container {
+  margin: 20px auto;
+  max-width: 400px;
+  padding: 20px;
+  background-color: #264E36;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  margin-bottom: 15vh;
+}
+
+.container-fluid h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.container h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f1f1f1;
+}
+
+input[type="submit"] {
+  background-color: #075e54;
+  color: #fff;
+  border: 1px solid #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover {
+  background-color: #034fb0;
+}
+
+#serverResponse_signup,
+#serverResponse_login {
+  display: none;
+  margin-bottom: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+#signupForm,
+#loginForm {
+  animation: fadeIn 1s;
+}
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.showLoginForm {
+  animation: fadeInUp 1s;
+}
+
+
+/* Add this to your index.css file */
+/* Add this to your index.css file */
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.animated-h1 {
+  opacity: 0;
+  animation: fadeIn 4s ease forwards;
+  animation-delay: 1s;
+  -webkit-text-stroke: 1px  #075e54;
+  padding: 10px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.hidden {
+  display: none;
+}
+/*navbar */
+.navbar {
+background-color: #264E36;
+border-bottom: 1px solid #fff;
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+z-index: 1000;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 60px;
+}
+
+.navbar li {
+padding: 0 20px;
+}
+
+.navbar a {
+color: #fff;
+text-decoration: none;
+font-size: 18px;
+transition: color 0.2s;
+}
+
+.navbar a:hover {
+color: #075e54;
+}
+
+/* Scrollbar Track */
+::-webkit-scrollbar-track {
+background-color: #264E36;
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+background-color: #075e54;
+}
+
+/* Scrollbar Thumb on Hover */
+::-webkit-scrollbar-thumb:hover {
+background-color: #034fb0;
+}
+
+/* Scrollbar Width */
+::-webkit-scrollbar {
+width: 8px;
+}
+
+/* Scrollbar Corner */
+::-webkit-scrollbar-corner {
+background-color: #264E36;
+}
