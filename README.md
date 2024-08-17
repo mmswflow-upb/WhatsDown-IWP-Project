@@ -43,4 +43,4 @@ On the left, the whatsdowndb database will appear, click it then go to the "SQL"
 
 ![ss3](ss3.png)
 
-## Now you can access it by searching in the browser localhost/WhatsDown-IWP-Project
+### Now you can access it by searching in the browser localhost/WhatsDown-IWP-Project
