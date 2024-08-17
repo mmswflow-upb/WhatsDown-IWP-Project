@@ -24,3 +24,13 @@ cd xampp/htdocs
 
 git clone https://github.com/mmswflow-upb/WhatsDown-IWP-Project.git
 ```
+
+### 3. Running the App
+Run the xampp app, then click on the start buttons adjacent to "Apache" & "MySQL", the web application should be running now.
+
+### 4. Entering the Database Admin Page
+Click on the "admin" button next to "MySQL", you will be directed to a PHPMyAdmin page. 
+
+![ss1](Ss1.png)
+
+### 5. Creating the Database for the App
