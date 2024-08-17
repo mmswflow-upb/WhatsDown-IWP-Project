@@ -19,7 +19,8 @@ function sendHttpRequest(method, url, data) {
 }
 
 //Check if user has already been logged in. If not, they will be redirected to index.html (login page)
-let path1 = "http://localhost/WhatsDown-IWP-Project/main_accounts.php";
+let path1 =
+  "http://localhost/WhatsDown-IWP-Project/php_scriptsphp_scripts/main_accounts.php";
 function redirect() {
   sendHttpRequest("GET", path1).then((responseData) => {
     responseData = JSON.parse(responseData);
@@ -90,7 +91,8 @@ let historyBar = document.getElementById("chatHistorySearch"),
   )),
   (historyListElems = document.getElementsByClassName("chatHistoryListElem")),
   (searchListElems = document.getElementsByClassName("searchListElem")),
-  (path2 = "http://localhost/WhatsDown-IWP-Project/add_search_users.php"),
+  (path2 =
+    "http://localhost/WhatsDown-IWP-Project/php_scriptsadd_search_users.php"),
   (historyTable_FromServer = []);
 
 //Remove all history results (divs)
@@ -297,9 +299,11 @@ let chatSuggestion = document.getElementById("chatSuggestion"),
   )),
   (messages_currUser = document.getElementsByClassName("message_currUser")),
   (spoilerTag = document.getElementById("spoilerTag")),
-  (path3 = "http://localhost/WhatsDown-IWP-Project/messages_retriever.php"),
-  (path4 = "http://localhost/WhatsDown-IWP-Project/sendMessages.php"),
-  (path5 = "http://localhost/WhatsDown-IWP-Project/saveFiles.php"),
+  (path3 =
+    "http://localhost/WhatsDown-IWP-Project/php_scripts/messages_retriever.php"),
+  (path4 =
+    "http://localhost/WhatsDown-IWP-Project/php_scripts/sendMessages.php"),
+  (path5 = "http://localhost/WhatsDown-IWP-Project/php_scripts/saveFiles.php"),
   (currentChatTableData = []);
 
 clearInterval(updateChatMessagesInterval);
@@ -706,9 +710,11 @@ let settings_btn = document.getElementById("settings");
 // Get the settings button and the settings content & paths for saving wallpaper, pfp and settings (php scripts)
 let settingsBtn = document.getElementById("settings");
 let settingsContent = document.getElementById("settingsContent"),
-  path7 = "http://localhost/WhatsDown-IWP-Project/settings_manager.php",
-  path8 = "http://localhost/WhatsDown-IWP-Project/savePfp.php",
-  path9 = "http://localhost/WhatsDown-IWP-Project/saveWallpaper.php";
+  path7 =
+    "http://localhost/WhatsDown-IWP-Project/php_scripts/settings_manager.php",
+  path8 = "http://localhost/WhatsDown-IWP-Project/php_scripts/savePfp.php",
+  path9 =
+    "http://localhost/WhatsDown-IWP-Project/php_scripts/saveWallpaper.php";
 
 // Add event listener to the settings button
 settingsBtn.addEventListener("click", function () {

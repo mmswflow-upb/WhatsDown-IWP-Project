@@ -17,7 +17,7 @@ window.onload = function () {
     (username_login = document.getElementById("username_login")),
     (password_login = document.getElementById("password_login")),
     (bodys = document.querySelector("body"));
-  path = "http://localhost/WhatsDown-IWP-Project/login_signup.php";
+  path = "http://localhost/WhatsDown-IWP-Project/php_scripts/login_signup.php";
   function scrollEventHandler() {
     let scrollPosition = window.scrollY || document.documentElement.scrollTop;
     let triggerPosition = 50; // Adjust this value as needed
