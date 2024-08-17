@@ -12,3 +12,15 @@ each server request has its own php script associated with it, so there's a bunc
 
 ## Setting it Up
 
+### 1. Installing XAMPP
+Check the official [page](https://www.apachefriends.org/) for the right version for you.
+
+### 2. Cloning this Repository
+
+First you have to go into the terminal, move to the directory of the xampp app and then go into htdocs by running:
+
+```powershell
+cd xampp/htdocs
+
+git clone https://github.com/mmswflow-upb/WhatsDown-IWP-Project.git
+```
