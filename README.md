@@ -42,3 +42,5 @@ On the left, you have a button "new", click it and you will be directed to a pag
 On the left, the whatsdowndb database will appear, click it then go to the "SQL" section, copy the commands from the [sql script](db_creation_script.sql) then paste it into the text box and click go.
 
 ![ss3](ss3.png)
+
+## Now you can access it by searching in the browser localhost/WhatsDown-IWP-Project
