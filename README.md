@@ -34,3 +34,11 @@ Click on the "admin" button next to "MySQL", you will be directed to a PHPMyAdmi
 ![ss1](Ss1.png)
 
 ### 5. Creating the Database for the App
+On the left, you have a button "new", click it and you will be directed to a page where you can set up a new DB, give it the name "whatsdowndb".
+
+![ss2](ss2.png)
+
+### 6. Creating the Users Table
+On the left, the whatsdowndb database will appear, click it then go to the "SQL" section, copy the commands from the [sql script](db_creation_script.sql) then paste it into the text box and click go.
+
+![ss3](ss3.png)
